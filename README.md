@@ -55,8 +55,8 @@ Paso 6: Configurar un Dominio (Opcional)
 Si tienes un dominio, apunta los registros DNS de tu dominio al IP de tu VPS. Luego puedes configurar un servidor web como Nginx para que funcione como un proxy inverso y redirija el tráfico hacia tu aplicación Express, haciéndola accesible en el puerto 80 o 443 (HTTPS).
 
 Ejemplo de configuración de Nginx (opcional):
-nginx
 ```bash
+nginx
 server {
     listen 80;
     server_name <tu-dominio-o-ip>;
