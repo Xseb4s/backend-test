@@ -56,6 +56,7 @@ Si tienes un dominio, apunta los registros DNS de tu dominio al IP de tu VPS. Lu
 
 Ejemplo de configuración de Nginx (opcional):
 nginx
+```bash
 server {
     listen 80;
     server_name <tu-dominio-o-ip>;
@@ -68,6 +69,7 @@ server {
         proxy_set_header X-Forwarded-Proto $scheme;
     }
 }
+```
 Reiniciar Nginx:
 ```bash
 sudo systemctl restart nginx
